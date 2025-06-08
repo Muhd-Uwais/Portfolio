@@ -8,6 +8,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/icomoonNew/style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -59,7 +60,6 @@
 							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
 								<li><a href="#home-section" class="nav-link">Home</a></li>
 								<li><a href="#services-section" class="nav-link">Services</a></li>
-								<li><a href="#about-section" class="nav-link">About</a></li>
 
 							</ul>
 						</nav>
@@ -74,7 +74,8 @@
 						<nav class="site-navigation position-relative" role="navigation">
 							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
 								<!-- <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li> -->
-								<li><a href="#clients-section" class="nav-link">Client</a></li>
+								<!-- <li><a href="#clients-section" class="nav-link">Client</a></li> -->
+								<li><a href="#about-section" class="nav-link">About</a></li>
 								<li><a href="#contact-section" class="nav-link">Contact</a></li>
 							</ul>
 						</nav>
@@ -124,34 +125,52 @@
 					<div class="col-12 mb-5 position-relative">
 						<h2 class="section-title text-center mb-5">My Services</h2>
 					</div>
+					
 
 					<div class="col-md-6 mb-4">
 						<div class="service d-flex h-100">
-							<div class="service-number mr-4"><span class="icon-business_center"></span></div>
+							<style>
+								.icon-artificial-intelligence-ai-icon {
+									font-size: 2rem;
+								}
+								.icon-tech-icon {
+									font-size: 1.5rem;
+								}
+							</style>
+							<div class="service-number mr-4"><span class="icon-artificial-intelligence-ai-icon"></span></div>
 							<div class="service-about">
-								<h3>Python Development and IoT Solutions</h3>
-								<p>I specialize in developing Python-based IoT solutions, enabling seamless control and automation of devices. My services include creating 
-									robust IoT systems and integrating them with Telegram bots for
-									real-time monitoring and remote management, enhancing interactivity and user experience.
+								<h3>Machine Learning Projects and Learning</h3>
+								<p>
+									Machine Learning & AI Exploration As an aspiring machine learning and AI developer, I am actively building real-world skills in model development, 
+									NLP, and LLMs. I'm currently working on projects involving Telegram-based AI bots, 
+									ESP32 integrations, and intent recognition using Rasa and Google Gemini. 
+									My learning path includes deep dives into supervised learning, transformers, and model deployment. 
+									I am eager to collaborate on applied AI projects, contribute to innovative solutions, 
+									and grow into roles focused on building smart, scalable, and impactful machine learning systems.
 								</p>
 							</div>
 						</div>
 					</div>
 
 
-
 					<div class="col-md-6 mb-4">
 						<div class="service d-flex h-100">
-							<div class="service-number mr-4"><span class="icon-layers"></span></div>
+							<div class="service-number mr-4"><span class="icon-tech-icon"></span></div>
 							<div class="service-about">
-								<h3>Machine Learning Projects and Learning</h3>
-								<p>As a dedicated machine learning student, I am continuously expanding my knowledge and 
-									skills in data analysis and predictive modeling. I am passionate about learning and applying machine learning 
-									techniques to solve real-world problems. I am open to collaborating on projects, internships, and 
-									research opportunities that allow me to grow and contribute to innovative solutions.</p>
+								<h3>Python Development and IoT Innovation</h3>
+								<p>
+									As a passionate Python developer specializing in IoT, 
+									I design and build intelligent systems that enable seamless automation and control of connected devices. 
+									My expertise extends to integrating these IoT solutions with Telegram bots for real-time monitoring, 
+									remote management, and enhanced user interactivity. 
+									By combining robust backend development with smart device connectivity, I deliver scalable, 
+									efficient, and user-friendly automation systems tailored for modern needs.
+								</p>
 							</div>
 						</div>
 					</div>
+
+
 
 				</div>
 			</div>
@@ -218,7 +237,7 @@
 		</section> -->
 
 
-		<section class="site-section bg-dark">
+		<!-- <section class="site-section bg-dark">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 mb-5 position-relative">
@@ -256,9 +275,9 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section class="site-section" id="clients-section">
+		<!-- <section class="site-section" id="clients-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 mb-5 position-relative">
@@ -284,7 +303,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 
 
@@ -321,8 +340,22 @@
 						</div>
 					</div>
 
+					<style>
+						#submit:hover {
+							background-color: black;
+							color: white;
+							border: 1px solid white;
+						}
+						#submit {
+							border-radius: 8px; 
+							border: 1px solid #666666; 
+							background-color: #207561;
+							color: white;
+						}
+					</style>
+					<!-- style="border-radius: 5px; border: 2px solid #666666; background-color: white; color: #207561;" -->
 					<div class="row">
-						<div class="text-center"><button type="submit" id="submit" style="border-radius: 5px; border: 2px solid #666666; background-color: white; color: #207561;">Send Message</button></div>
+						<div class="form-group"><button type="submit" id="submit" >Send Message</button></div>
 
 					</div>
 				</form>
@@ -332,12 +365,12 @@
 		<footer class="site-section bg-light footer">
 			<div class="container">
 				<div class="row mb-5">
-					<div class="col-md-3">
+					<!-- <div class="col-md-3">
 						<h3 class="footer-title">Address</h3>
 						<p><span class="d-inline-block d-md-block">203 Fake St. Mountain View,</span> San Francisco,
 							California, USA
 						</p>
-					</div>
+					</div> -->
 					<!-- <div class="col-md-5 mx-auto">
 						<div class="row">
 							<div class="col-lg-4">
