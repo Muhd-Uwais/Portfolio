@@ -32,7 +32,8 @@ $(document).ready(function(){
 
 function sent(form){
     $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbzHJkk1wjcSCrm-pWegOqhWcfLvx9B8fsbbY-LW3JzQuFxHYkbkuiIy5bTjIUCWZado5w/exec",
+        // url: "https://script.google.com/macros/s/AKfycbzHJkk1wjcSCrm-pWegOqhWcfLvx9B8fsbbY-LW3JzQuFxHYkbkuiIy5bTjIUCWZado5w/exec",
+        url: "https://formspree.io/f/mzzgekeo",
         data: $(form).serialize(),
         method: "post",
         success: function (response) {
