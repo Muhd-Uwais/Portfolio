@@ -20,8 +20,9 @@ $(document).ready(function(){
             }
         },
         submitHandler: function(form, event) {
-            event.preventDefault(); 
-            sent(form);
+            form.submit();
+            alert("Form submitted successfully");
+            window.location.reload();
         },
         invalidHandler: function(event, validator) {
             alert("Form validation failed. Please check all the inputs are correct...");
