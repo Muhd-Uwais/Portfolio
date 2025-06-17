@@ -20,9 +20,8 @@ $(document).ready(function(){
             }
         },
         submitHandler: function(form, event) {
-            form.submit();
-            alert("Form submitted successfully");
-            window.location.reload();
+            event.preventDefault(); 
+            sent(form);
         },
         invalidHandler: function(event, validator) {
             alert("Form validation failed. Please check all the inputs are correct...");
@@ -33,8 +32,8 @@ $(document).ready(function(){
 
 function sent(form){
     $.ajax({
-        // url: "https://script.google.com/macros/s/AKfycbzHJkk1wjcSCrm-pWegOqhWcfLvx9B8fsbbY-LW3JzQuFxHYkbkuiIy5bTjIUCWZado5w/exec",
-        url: "https://formspree.io/f/mzzgekeo",
+        url: "https://script.google.com/macros/s/AKfycbzHJkk1wjcSCrm-pWegOqhWcfLvx9B8fsbbY-LW3JzQuFxHYkbkuiIy5bTjIUCWZado5w/exec",
+        // url: "https://formspree.io/f/mzzgekeo",
         data: $(form).serialize(),
         method: "post",
         success: function (response) {
