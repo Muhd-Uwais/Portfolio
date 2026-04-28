@@ -1,446 +1,763 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 
 <head>
-	<title>Muhd Uwais</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
-	<link rel="stylesheet" href="fonts/icomoonNew/style.css">
+  <!-- SEO -->
+  <title>Muhd Uwais | Machine Learning Engineer</title>
+  <meta name="description"
+    content="Muhd Uwais — Building production-ready ML tools like local semantic code search (Ziv). Focused on efficient, deployable AI systems." />
+  <meta name="keywords"
+    content="Muhd Uwais, Machine Learning Engineer, Local-first AI, Semantic Search, Efficient ML Systems, FAISS, ONNX" />
+  <meta name="author" content="Muhd Uwais" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://muhd-uwais.github.io/Portfolio/" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-FZkko1kEDs2L9jZOe30BuCJEmaXLM5Blv6JZlD0YvGlNfOzBMy7lYCeF2H3g1NSwYhI4GoTumKeWl5oWV5i1Eg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://muhd-uwais.github.io/Portfolio/" />
+  <meta property="og:title" content="Muhd Uwais | Machine Learning Engineer" />
+  <meta property="og:description"
+    content="Machine Learning Engineer Building production-ready ML tools like local semantic code search (Ziv). Focused on efficient, deployable AI systems." />
+  <meta property="og:image" content="https://muhd-uwais.github.io/Portfolio/assets/Dark-Theme-name256.png" />
+  <meta property="og:site_name" content="Muhd Uwais" />
+  <meta property="og:image:width" content="256" />
+  <meta property="og:image:height" content="256" />
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Muhd Uwais | Machine Learning Engineer" />
+  <meta name="twitter:description"
+    content="Machine Learning Engineer Building production-ready ML tools like local semantic code search (Ziv). Focused on efficient, deployable AI systems." />
+  <meta property="twitter:image" content="https://muhd-uwais.github.io/Portfolio/assets/Dark-Theme-name256.png" />
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/jquery-ui.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://muhd-uwais.github.io/Portfolio/#person",
+    "name": "Muhd Uwais",
+    "url": "https://muhd-uwais.github.io/Portfolio/",
+    "image": "https://muhd-uwais.github.io/Portfolio/assets/profile.jpg",
+    "jobTitle": "Machine Learning Engineer",
+    "description": "Machine Learning Engineer Building production-ready ML tools like local semantic code search (Ziv). Focused on efficient, deployable AI systems.",
+    
+    "sameAs": [
+      "https://github.com/Muhd-Uwais",
+      "https://linkedin.com/in/muhd-uwais"
+    ],
 
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    "knowsAbout": [
+      "Machine Learning",
+      "Local-first AI",
+      "Semantic Search",
+      "Efficient ML Systems",
+      "Python",
+      "FAISS",
+      "ONNX"
+    ],
 
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Self-employed"
+    },
 
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Brototype"
+    }
+  }
+  </script>
 
-	<link rel="stylesheet" href="css/aos.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/style.css">
-
-	<link rel="icon" type="image/svg+xml" href="images/port-fevicon.svg"> 
-
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body>
 
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Skip to content</a>
 
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container--wide">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <!-- Logo -->
+        <a href="#hero" class="logo" aria-label="Muhd Uwais home">
+          <svg width="48" height="48" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M347.941 709.374V774.36H243V520.573V249H338.014L430.192 337.928L512.443 417.279L582.699 349.5L590.439 342.033V432.329L512.443 507.576L407.502 406.334L311.07 
+              313.302V709.374H347.941Z" fill="var(--color-logo)" stroke="var(--color-logo-stroke)" />
+            <path
+              d="M690.416 335.417V249H781.176V414.975V586.438V774.36H676.235V708.519H713.106V535.685V313.47L690.416 335.417Z"
+              fill="var(--color-logo)" stroke="var(--color-logo-stroke)" />
+            <path d="M606.039 327L674.108 258.5V589.655C674.108 624.947 667.456 656.715 653.979 684.82C640.843 712.323 622.259 734.317 598.193 750.593L597.029 
+              751.374L597.013 751.383C572.208 767.68 543.211 775.044 510.315 775.044C477.42 775.044 448.423 767.68 423.618 751.383L423.602 751.374L422.438 
+              750.593C398.376 734.321 379.73 712.337 366.465 684.845L366.457 684.825L366.447 684.806C353.107 656.705 346.523 624.942 346.523 589.655L346.523 
+              409.071L412.466 472.004L412.465 584.732C412.465 608.565 413.871 629.514 422.071 647.71L422.849 649.386C430.981 666.579 442.257 680.004 456.617 
+              689.883C474.121 701.634 486.622 704.868 510.315 704.868C534.009 704.868 546.501 701.638 564.005 689.887C578.959 679.692 590.491 665.726 598.544 
+              647.745C607.647 627.55 606.039 610.114 606.039 584.732V327Z" fill="var(--color-primary)" />
+          </svg>
+          <span>Muhd Uwais</span>
+        </a>
 
-	<div class="site-wrap">
+        <!-- Desktop Nav -->
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-		<div class="site-mobile-menu site-navbar-target">
-			<div class="site-mobile-menu-header">
-				<div class="site-mobile-menu-close mt-3">
-					<span class="icon-close2 js-menu-toggle"></span>
-				</div>
-			</div>
-			<div class="site-mobile-menu-body"></div>
-		</div>
+        <div class="nav-actions">
+          <!-- Theme toggle -->
+          <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+            <!-- Icon injected by JS -->
+            <span class="sr-only">Toggle theme</span>
+          </button>
+          <a href="#contact" class="btn-hire">Hire Me</a>
+          <button class="menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" id="menu-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-		<header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
 
-			<div class="container-fluid">
-				<div class="row align-items-center justify-content-center">
+  <!-- ============ MAIN ============ -->
+  <main id="main">
 
-					<div class="">
-						<nav class="site-navigation position-relative text-right" role="navigation">
-							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="#home-section" class="nav-link">Home</a></li>
-								<li><a href="#services-section" class="nav-link">Services</a></li>
-								<li><a href="#about-section" class="nav-link">About</a></li>
-							</ul>
-						</nav>
-					</div>
+    <!-- ====== HERO ====== -->
+    <section id="hero" aria-label="Introduction">
+      <div class="hero-bg">
+        <div class="hero-grid" aria-hidden="true"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-badge" aria-label="Current focus">
+          <span class="dot" aria-hidden="true"></span>
+          Machine Learning Engineer · Local-first AI &amp; semantic search
+        </div>
 
-					<div class=" text-center mx-5">
-						<h1 class="m-0 site-logo"><a href="index.html">Me.</a></h1>
-					</div>
+        <h1 class="hero-name">
+          Muhd <em>Uwais</em>
+        </h1>
 
-					<div class="text-left">
+        <p class="hero-tagline">
+          <strong>Machine Learning Engineer</strong> building practical, local-first AI systems and semantic search that
+          actually ships.
+        </p>
 
-						<nav class="site-navigation position-relative" role="navigation">
-							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<!-- <li><a href="#clients-section" class="nav-link">Client</a></li> -->
-								<li><a href="#portfolio-section" class="nav-link">Projects</a></li>
-								<li><a href="#contact-section" class="nav-link">Contact</a></li>
-							</ul>
-						</nav>
+        <p class="hero-desc">
+          I solve data-intensive problems by keeping inference local.
+          By replacing cloud-dependency with efficient, on-device pipelines, I deliver systems that are faster,
+          more private, and more reliable than traditional alternatives.
+        </p>
 
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary" aria-label="View projects">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,12 2,6" />
+            </svg>
+            Contact Me
+          </a>
+        </div>
 
-						<div class="d-inline-block d-lg-none" style="position: relative; top: 3px;"><a href="#"
-								class="site-menu-toggle js-menu-toggle float-right"><span
-									class="icon-menu h3"></span></a></div>
+        <div class="hero-social" role="list" aria-label="Social links">
+          <a href="https://github.com/Muhd-Uwais" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="GitHub profile" role="listitem">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+                .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385
+                1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405
+                3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84
+                1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22
+                0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12C24 5.37
+                18.63 0 12 0z" />
+            </svg>
+            GitHub
+          </a>
+          <span class="social-divider" aria-hidden="true">·</span>
+          <a href="https://linkedin.com/in/muhd-uwais" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="LinkedIn profile" role="listitem">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 
+                2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 
+                5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 
+                2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 
+                0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 
+                22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
 
-					</div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+        <span>Scroll</span>
+      </div>
+    </section>
 
-				</div>
-			</div>
+    <!-- ====== ABOUT ====== -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="section-label">About</p>
+            <h2 class="section-title" id="about-heading">
+              Engineering <br><em>useful ML systems</em>
+            </h2>
+            <p>
+              I'm building developer tools that work offline-first: semantic code search that understands intent (Ziv),
+              speaker recognition that runs locally (EchoID), and diff viewers that cut through noise (Git Diff,
+              planned).
+            </p>
+            <p>
+              No cloud dependencies. No API keys. Just systems that ship and solve problems people actually have.
+            </p>
+            <div class="about-stats">
+              <div class="stat-card">
+                <div class="stat-number" data-target="3">0+</div>
+                <div class="stat-label">Open-source projects</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-target="2">0+</div>
+                <div class="stat-label">ML models deployed</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-target="2">0+</div>
+                <div class="stat-label">Years focused on ML</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Lines of curiosity</div>
+              </div>
+            </div>
+          </div>
 
-		</header>
+          <div class="about-side reveal">
+            <p class="section-subtitle">What I actually build</p>
+            <ul class="about-list">
+              <li>
+                <strong>Local-first ML tools</strong> that respect latency, bandwidth, and privacy constraints.
+              </li>
+              <li>
+                <strong>Semantic search pipelines</strong> combining embeddings, FAISS, and clean APIs.
+              </li>
+              <li>
+                <strong>Efficient inference systems</strong> using ONNX for practical deployment.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ====== SKILLS ====== -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title" id="skills-heading">
+          Capabilities across<br><em>ML, systems &amp; infra</em>
+        </h2>
 
-		<div class="site-blocks-cover overlay bg-light" id="home-section">
+        <div class="skills-grid">
+          <!-- ML / AI -->
+          <article class="skill-group reveal">
+            <p class="skill-group-title">Machine Learning / AI</p>
+            <div class="skill-tags">
+              <span class="skill-tag primary">Python</span>
+              <span class="skill-tag primary">TensorFlow / Keras</span>
+              <span class="skill-tag primary">Embeddings &amp; semantic search</span>
+              <span class="skill-tag">CNNs</span>
+              <span class="skill-tag">Ranking &amp; retrieval</span>
+              <span class="skill-tag">Model evaluation</span>
+            </div>
+          </article>
 
-			<div class="container">
-				<div class="row justify-content-center">
+          <!-- Backend / Systems -->
+          <article class="skill-group reveal">
+            <p class="skill-group-title">Backend / Systems</p>
+            <div class="skill-tags">
+              <span class="skill-tag primary">FastAPI</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">ONNX runtime</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">Clean architecture</span>
+            </div>
+          </article>
 
-					<div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
-						<div class="row">
-							<div class="col-lg-6">
-								<h1 class="text-black">I'm Muhammed <span id="uwais">Uwais</span></h1>
-								<p class="lead">Python Developer</p>
-								<p><a href="#about-section" class="btn smoothscroll btn-primary">About Me</a></p>
+          <!-- Tools / Infra -->
+          <article class="skill-group reveal">
+            <p class="skill-group-title">Tools / Infra</p>
+            <div class="skill-tags">
+              <span class="skill-tag primary">Git &amp; GitHub</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">CI/CD basics</span>
+              <span class="skill-tag">Monitoring &amp; logging</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-							</div>
-						</div>
-					</div>
+    <!-- ====== PROJECTS ====== -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Projects</p>
+            <h2 class="section-title" id="projects-heading">
+              Systems built for<br><em>real-world problems</em>
+            </h2>
+          </div>
+          <a href="https://github.com/Muhd-Uwais" target="_blank" rel="noopener noreferrer" class="view-all"
+            aria-label="View all projects on GitHub">
+            All projects on GitHub
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
 
-				</div>
-			</div>
-			<div class="ms-5">
-				<img src="images/uwais-portfolio.jpg" alt="Image" class="img-face" data-aos="fade" height="74%">
-			</div>
-		</div>
+        <div class="projects-grid">
+          <!-- Featured: Ziv -->
+          <article class="project-card project-card--featured reveal" aria-labelledby="ziv-title">
+            <div>
+              <div class="project-header">
+                <div class="project-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="M21 21l-4.35-4.35" />
+                    <path d="M8 11h6M11 8v6" />
+                  </svg>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Muhd-Uwais/ziv" target="_blank" rel="noopener noreferrer"
+                    class="project-link" aria-label="Ziv GitHub repo">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                               0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                               -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+                               .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385
+                               1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405
+                               3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84
+                               1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22
+                               0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12C24 5.37
+                               18.63 0 12 0z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
 
+              <h3 class="project-name" id="ziv-title" style="line-height: 2;">Ziv — Semantic Code Search</h3>
+              <p class="project-problem">
+                Problem: Grepping through large local codebases is slow and misses semantic intent.
+              </p>
+              <ul class="project-impact">
+                <li>Built a local-first semantic code search tool using FAISS + ONNX embeddings.</li>
+                <li>Returns intent-aware results with millisecond latency on commodity hardware.</li>
+                <li>Designed feedback loop to improve ranking signal from real usage.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">FAISS</span>
+                <span class="project-tag">Sentence Transformers</span>
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag">NLP</span>
+              </div>
+            </div>
+            <div class="featured-meta">
+              <span class="version-badge">Featured</span>
+              <span class="status-badge">Active</span>
+            </div>
+          </article>
 
+          <!-- Project 2 -->
+          <article class="project-card reveal" aria-labelledby="gitdiff-title">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="18" r="3" />
+                  <circle cx="6" cy="6" r="3" />
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7" />
+                  <line x1="6" y1="9" x2="6" y2="21" />
+                </svg>
+              </div>
+              <div class="project-links">
+                <div class="featured-meta">
+                  <span class="status-badge">Planned</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="project-name" id="gitdiff-title">Semantic Git Diff</h3>
+            <p class="project-problem">
+              Problem: <code>git diff</code> compares lines, not meaning — making it impossible to distinguish
+              a safe rename from a risky logic change without reading every line manually.
+            </p>
+            <ul class="project-impact">
+              <li>Classifies each change by intent: rename, extract, refactor, format-only, or new logic.</li>
+              <li>Scores risk per file using heuristics targeting auth, config, and security-sensitive paths.</li>
+              <li>Runs entirely offline with a local ONNX embedding model — no code leaves the machine.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">ONNX Runtime</span>
+              <span class="project-tag">Sentence Embeddings</span>
+              <span class="project-tag">tree-sitter</span>
+              <span class="project-tag">NLP</span>
+            </div>
+          </article>
 
+          <!-- Project 3 -->
+          <article class="project-card reveal" aria-labelledby="proj-intent-title">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                  <line x1="12" y1="19" x2="12" y2="23" />
+                  <line x1="8" y1="23" x2="16" y2="23" />
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Muhd-Uwais/EchoID" target="_blank" rel="noopener noreferrer"
+                  class="project-link" aria-label="Local Intent API GitHub repo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                             0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                             -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+                             .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385
+                             1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405
+                             3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84
+                             1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22
+                             0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12C24 5.37
+                             18.63 0 12 0z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name" id="proj-intent-title">EchoID — Voice Speaker Recognition</h3>
+            <p class="project-problem">
+              Problem: Beginners need a simpler way to build speaker recognition without huge boilerplate or massive
+              datasets.
+            </p>
+            <ul class="project-impact">
+              <li>Built a binary speaker recognition system using CNNs on mel-spectrograms.</li>
+              <li>Added waveform and spectrogram augmentation to improve learning with limited data.</li>
+              <li>Supports real-time inference through a GUI-based prediction flow.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Keras</span>
+              <span class="project-tag">Tensorflow</span>
+              <span class="project-tag">CNN</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-		<div class="site-section" id="services-section">
-			<div class="container">
-				<div class="row ">
-					<div class="col-12 mb-5 position-relative">
-						<h2 class="section-title text-center mb-5">My Services</h2>
-					</div>
-					
+    <!-- ====== EXPERIENCE ====== -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <p class="section-label">Selected Work / Engineering Experience</p>
+        <h2 class="section-title" id="experience-heading">
+          Learning by<br><em>shipping systems</em>
+        </h2>
 
-					<div class="col-md-6 mb-4">
-						<div class="service d-flex h-100">
-							<style>
-								.icon-artificial-intelligence-ai-icon {
-									font-size: 2rem;
-								}
-								.icon-tech-icon {
-									font-size: 1.5rem;
-								}
-							</style>
-							<div class="service-number mr-4"><span class="icon-artificial-intelligence-ai-icon"></span></div>
-							<div class="service-about">
-								<h3>Machine Learning Projects and Learning</h3>
-								<p>
-									Machine Learning & AI Exploration As an aspiring machine learning and AI developer, I am actively building real-world skills in model development, 
-									NLP, and LLMs. I'm currently working on projects involving Telegram-based AI bots, 
-									ESP32 integrations, and intent recognition using Rasa and Google Gemini. 
-									My learning path includes deep dives into supervised learning, transformers, and model deployment. 
-									I am eager to collaborate on applied AI projects, contribute to innovative solutions, 
-									and grow into roles focused on building smart, scalable, and impactful machine learning systems.
-								</p>
-							</div>
-						</div>
-					</div>
+        <div class="experience-layout">
+          <!-- Timeline -->
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <p class="timeline-period">2026 – Present</p>
+              <p class="timeline-role">Independent ML Engineer</p>
+              <p class="timeline-org">Remote · Self-directed build phase</p>
+              <ul class="timeline-details" role="list">
+                <li>Designed and shipped Ziv, a local-first semantic code search system for developer workflows.</li>
+                <li>Focused on practical retrieval systems, local inference, and tools that solve real usage problems.
+                </li>
+                <li>Currently planning Semantic Git Diff, a developer-focused diff review tool built around clarity and
+                  speed.</li>
+              </ul>
+            </article>
 
+            <article class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <p class="timeline-period">2025 – 2026</p>
+              <p class="timeline-role">ML Projects &amp; System Practice</p>
+              <p class="timeline-org">Brototype · Self-driven execution</p>
+              <ul class="timeline-details" role="list">
+                <li>Built EchoID, a speaker recognition project using mel-spectrograms, CNNs, augmentation, and
+                  real-time inference.</li>
+                <li>Implemented first ML models from scratch, including simple and multiple linear regression using
+                  NumPy.</li>
+                <li>Built small automation tools and utility projects while strengthening Python, data handling, and
+                  engineering discipline.</li>
+              </ul>
+            </article>
 
-					<div class="col-md-6 mb-4">
-						<div class="service d-flex h-100">
-							<div class="service-number mr-4"><span class="icon-tech-icon"></span></div>
-							<div class="service-about">
-								<h3>Python Development and IoT Innovation</h3>
-								<p>
-									As a passionate Python developer specializing in IoT, 
-									I design and build intelligent systems that enable seamless automation and control of connected devices. 
-									My expertise extends to integrating these IoT solutions with Telegram bots for real-time monitoring, 
-									remote management, and enhanced user interactivity. 
-									By combining robust backend development with smart device connectivity, I deliver scalable, 
-									efficient, and user-friendly automation systems tailored for modern needs.
-								</p>
-							</div>
-						</div>
-					</div>
+            <article class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <p class="timeline-period">2024 – 2025</p>
+              <p class="timeline-role">Directed Self-Learning in Python &amp; ML</p>
+              <p class="timeline-org">Brototype</p>
+              <ul class="timeline-details" role="list">
+                <li>Followed a direction-based, mentor-light learning model: weekly topics, self-sourced resources, and
+                  self-driven practice.</li>
+                <li>Built a portfolio website and deepened core Python skills through repeated implementation work.</li>
+                <li>Began learning machine learning fundamentals through toy projects, experimentation, and
+                  concept-first study.</li>
+              </ul>
+            </article>
 
+            <article class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <p class="timeline-period">2022 – 2024</p>
+              <p class="timeline-role">Programming Foundations</p>
+              <p class="timeline-org">Self-directed</p>
+              <ul class="timeline-details" role="list">
+                <li>Started with programming basics in C and Java, then transitioned into Python for practical problem
+                  solving.</li>
+                <li>Built early small programs such as a calculator while learning syntax, logic, and debugging habits.
+                </li>
+                <li>Established the base layer of programming discipline that later supported ML and systems work.</li>
+              </ul>
+            </article>
+          </div>
 
+          <!-- Focus areas -->
+          <div class="experience-focus">
+            <h3 class="experience-subtitle">What this means in practice</h3>
+            <div class="experience-cards">
+              <article class="experience-card reveal">
+                <h4>Self-directed execution</h4>
+                <p>Work from goals, find resources independently, and turn unfamiliar topics into working systems
+                  without waiting for hand-holding.</p>
+              </article>
+              <article class="experience-card reveal">
+                <h4>Systems-first learning</h4>
+                <p>Move beyond isolated model experiments by building tools, APIs, and local workflows that are usable
+                  in practice.</p>
+              </article>
+              <article class="experience-card reveal">
+                <h4>Edge-aware design</h4>
+                <p>Design systems that still work with flaky networks, small machines, and real-world mess.</p>
+              </article>
+              <article class="experience-card reveal">
+                <h4>Visible progression</h4>
+                <p>Show a clear path from programming fundamentals to ML prototypes, then to more serious local-first AI
+                  systems and developer tools.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				</div>
-			</div>
-		</div>
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Left: info -->
+          <div class="contact-info reveal">
+            <p class="section-label">Contact</p>
+            <h2 class="section-title" id="contact-heading">
+              Work with me on<br><em>something concrete</em>
+            </h2>
+            <p class="contact-lead">
+              I’m currently open to ML/AI engineering roles focused on practical systems, local-first products, and
+              semantic search.
+              If your team is building useful infrastructure or has an interesting contribution in mind, I’d be glad to
+              hear from you.
+            </p>
 
-		<div class="site-section" id="about-section">
-			<div class="container">
-				<div class="row ">
-					<div class="col-12 mb-4 position-relative">
-						<h2 class="section-title">About Me</h2>
-					</div>
-					<div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-						<div class="bg-light mb-5 ">
-							<img src="images/uwais-port2.jpg" alt="Image" class="img-fluid">
-						</div>
-					</div>
+            <div class="contact-info-group">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1
+                             0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,12 2,6" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-item-label">Email</p>
+                  <p class="contact-item-value">
+                    <a href="mailto:muhd.uwais51@gmail.com">muhd.uwais51@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-item-label">Based in</p>
+                  <p class="contact-item-value">Kerala, India</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-item-label">Availability</p>
+                  <p class="contact-item-value">Open to remote and relocation</p>
+                </div>
+              </div>
+            </div>
 
-					<div class="col-lg-6 order order-lg-4">
-						<p>
-							I am a passionate Python developer and enthusiastic machine learning student with a strong interest in 
-							Natural Language Processing (NLP) and Large Language Models (LLMs). I create intelligent, 
-							real-world solutions including Python-based IoT systems integrated with Telegram bots for 
-							real-time monitoring and automation. My skills span PyTorch, TensorFlow, OpenCV, Arduino, 
-							and PostgreSQL, along with web technologies like HTML, CSS, JavaScript, and Django. 
-							I’m also proficient in Git, C/C++, and always eager to learn, build, and collaborate on exciting AI-driven projects.
-						</p>
-						<p><a href="#contact-section" class="btn smoothscroll btn-primary">Contact Me</a></p>
-					</div>
+            <div class="contact-social" role="list" aria-label="Social profiles">
+              <a href="https://github.com/Muhd-Uwais" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                aria-label="GitHub" role="listitem">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+                           0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                           -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+                           .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385
+                           1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405
+                           3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84
+                           1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22
+                           0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12C24 5.37
+                           18.63 0 12 0z" />
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/muhd-uwais/" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" aria-label="LinkedIn" role="listitem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 
+                    2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 
+                    5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 
+                    2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 
+                    0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 
+                    22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+            </div>
+          </div>
 
-				</div>
-			</div>
-		</div>
+          <!-- Right: form -->
+          <div class="contact-form-wrap reveal">
+            <p class="form-title">Send a Message</p>
+            <form id="contact-form" novalidate aria-label="Contact form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required
+                    autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about your project or opportunity…" required
+                  rows="5"></textarea>
+              </div>
+              <button type="submit" class="form-submit" aria-label="Send message">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+                Send Message
+              </button>
+              <p class="form-alt">
+                Prefer email? <a href="mailto:muhd.uwais51@gmail.com">muhd.uwais51@gmail.com</a>
+              </p>
+            </form>
+            <div class="form-success" id="form-success" role="alert" aria-live="polite">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"
+                style="margin:0 auto var(--space-4);" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              <p>Thanks! I'll get back to you soon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+  </main>
 
+  <!-- ============ FOOTER ============ -->
+  <footer aria-label="Site footer">
+    <div class="container--wide">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          © 2026 Muhammed Uwais · Built with simple tools and deliberate engineering.
+        </p>
+        <div class="footer-links" role="list">
+          <a href="https://github.com/Muhd-Uwais" target="_blank" rel="noopener noreferrer" role="listitem">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhd-uwais/" target="_blank" rel="noopener noreferrer"
+            role="listitem">LinkedIn</a>
+          <a href="#contact" role="listitem">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-
-		<section class="site-section block__62272" id="portfolio-section">
-
-
-			<div class="container">
-				<div class="row mb-5">
-					<div class="col-12 position-relative">
-						<h2 class="section-title text-center mb-5">My Projects</h2>
-					</div>
-				</div>
-				<div id="posts" class="row no-gutter">
-					<div class="item web col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
-						<a href="https://github.com/Muhd-Uwais/AutoDriveBackup.git" class="item-wrap" target="_blank" rel="noopener noreferrer">
-							<span class="icon-search2"></span>
-							<img class="img-fluid" src="images/AutoBackup.png" style="height: 22rem; width: 100%;">
-						</a>
-					</div>
-					<div class="item web col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
-						<a href="https://github.com/Muhd-Uwais/LinearRegression-Scratch.git" class="item-wrap"  target="_blank" rel="noopener noreferrer">
-							<span class="icon-search2"></span>
-							<img class="img-fluid" src="images/LinearRegressionImg.png" style="height: 22rem; width: 100%;">
-						</a>
-					</div>
-					<div class="item web col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
-						<a href="https://github.com/Muhd-Uwais/Telegram-Bot/tree/master" class="item-wrap"  target="_blank" rel="noopener noreferrer">
-							<span class="icon-search2"></span>
-							<img class="img-fluid" src="images/TelegramBot.png" style="height: 22rem; width: 100%;">
-						</a>
-					</div>
-					<div class="item web col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
-						<a href="https://github.com/Muhd-Uwais/AutoDownloadOrganizer.git" class="item-wrap"  target="_blank" rel="noopener noreferrer">
-							<span class="icon-search2"></span>
-							<img class="img-fluid" src="images/DownloadOrganizer.png" style="height: 22rem; width: 100%;">
-						</a>
-					</div>
-				</div>
-			</div>
-
-		</section>
-
-
-		<!-- <section class="site-section bg-dark">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 mb-5 position-relative">
-						<h2 class="section-title text-center mb-5 text-white">testimonials</h2>
-					</div>
-				</div>
-				<div class="owl-carousel slide-one-item">
-					<div class="slide">
-						<blockquote>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-								there live the
-								blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
-								a large language
-								ocean.</p>
-							<p><cite>&mdash; Jean Smith</cite></p>
-						</blockquote>
-					</div>
-					<div class="slide">
-						<blockquote>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia. It is a
-								paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-							<p><cite>&mdash; Carl Spencer</cite></p>
-						</blockquote>
-					</div>
-					<div class="slide">
-						<blockquote>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-								unorthographic life
-								One day however a small line of blind text by the name of Lorem Ipsum decided to leave
-								for the far World
-								of Grammar.</p>
-							<p><cite>&mdash; Ryan Peters</cite></p>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
-		<!-- <section class="site-section" id="clients-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 mb-5 position-relative">
-						<h2 class="section-title text-center">Clients</h2>
-					</div>
-					<div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-						<img src="images/logo_1.jpg" alt="Image" class="img-fluid">
-					</div>
-					<div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-						<img src="images/logo_2.jpg" alt="Image" class="img-fluid">
-					</div>
-					<div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-						<img src="images/logo_3.jpg" alt="Image" class="img-fluid">
-					</div>
-					<div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-						<img src="images/logo_4.jpg" alt="Image" class="img-fluid">
-					</div>
-					<div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-						<img src="images/logo_5.jpg" alt="Image" class="img-fluid">
-					</div>
-					<div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-						<img src="images/logo_6.jpg" alt="Image" class="img-fluid">
-					</div>
-				</div>
-			</div>
-		</section> -->
-
-
-
-		<section class="site-section" id="contact-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 mb-5 position-relative">
-						<h2 class="section-title text-center mb-5">Contact Form</h2>
-					</div>
-				</div>
-				<form action="#" class="form" id="contact-form" method="POST">
-					<div class="row mb-4">
-						<div class="form-group col-6">
-							<input type="text" class="form-control" placeholder="First name" id="name" name="fname">
-						</div>
-					</div>
-
-					<div class="row mb-4">
-						<div class="form-group col-12">
-							<input type="email" class="form-control" placeholder="Email address" id="email" name="emaiL">
-						</div>
-					</div>
-
-					<div class="row mb-4">
-						<div class="form-group col-12">
-							<input type="text" class="form-control" placeholder="Subject of the message" id="subject" name="subject">
-						</div>
-					</div>
-
-					<div class="row mb-4">
-						<div class="form-group col-12">
-							<textarea cols="30" rows="10" class="form-control" id="message" name="message"
-								placeholder="Type your message here.."></textarea>
-						</div>
-					</div>
-
-					<style>
-						#submit:hover {
-							background-color: black;
-							color: white;
-							border: 1px solid white;
-						}
-						#submit {
-							border-radius: 8px; 
-							border: 1px solid #666666; 
-							background-color: #207561;
-							color: white;
-						}
-					</style>
-					<!-- style="border-radius: 5px; border: 2px solid #666666; background-color: white; color: #207561;" -->
-					<div class="row">
-						<input type="hidden" name="_redirect" value="https://muhd-uwais.github.io/portfolio/#contant-section">
-						<div class="form-group"><button type="submit" id="submit" >Send Message</button></div>
-
-					</div>
-				</form>
-			</div>
-		</section>
-
-		<footer class="site-section bg-light footer">
-			<div class="container">
-				<div class="row mb-5">
-					<!-- <div class="col-md-3">
-						<h3 class="footer-title">Address</h3>
-						<p><span class="d-inline-block d-md-block">203 Fake St. Mountain View,</span> San Francisco,
-							California, USA
-						</p>
-					</div> -->
-					<!-- <div class="col-md-5 mx-auto">
-						<div class="row">
-							<div class="col-lg-4">
-								<h3 class="footer-title">Services</h3>
-								<ul class="list-unstyled">
-									<li><a href="#">Machine learning</a></li>
-									<li><a href="#">IoT Solutions</a></li>
-									<li><a href="#">Branding</a></li>
-								</ul>
-							</div>
-						</div>
-					</div> -->
-							<!-- <div class="col-lg-4">
-								<h3 class="footer-title">Resources</h3>
-								<ul class="list-unstyled">
-									<li><a href="#">Web App</a></li>
-									<li><a href="#">Graphic</a></li>
-									<li><a href="#">Branding</a></li>
-								</ul>
-							</div>
-							<div class="col-lg-4">
-								<h3 class="footer-title">Links</h3>
-								<ul class="list-unstyled">
-									<li><a href="#">Web App</a></li>
-									<li><a href="#">Graphic</a></li>
-									<li><a href="#">Branding</a></li>
-								</ul>
-							</div> -->
-					<div class="col-md-3">
-						<h3 class="footer-title">Follow Me</h3>
-						<!-- <a href="#" class="social-circle"><span class="icon-twitter"></span></a>
-						<a href="#" class="social-circle"><span class="icon-facebook"></span></a> -->
-						<a href="https://www.instagram.com/_.uwais_/" class="social-circle"><span class="icon-instagram icon"></span></a>
-						<!-- <a href="#" class="social-circle"><span class="icon-dribbble"></span></a> -->
-						<a href="https://www.linkedin.com/in/muhd-uwais-a159a6280/" class="social-circle icon"><span class="icon-linkedin"></span></a>
-						<a href="https://github.com/Muhd-Uwais" class="social-circle"><span class="icon-github icon"></a>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-	</div> <!-- .site-wrap -->
-
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="validation.js"></script>
-	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
 </body>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript"></script>
 
 </html>
