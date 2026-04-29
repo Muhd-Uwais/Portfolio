@@ -87,25 +87,31 @@ if (menuBtn && mobileNav) {
 }
 
 // ---------- Active nav highlight ----------
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
+const sections = [...document.querySelectorAll('section[id]')];
+const navLinks = [...document.querySelectorAll('.nav-links a')];
 
-const ioNav = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(a => {
-          const href = a.getAttribute('href');
-          const matches = href === `#${entry.target.id}`;
-          a.classList.toggle('active', !!matches);
-        });
-      }
-    });
-  },
-  { threshold: 0.4 }
-);
+function setActiveNav() {
+  const headerOffset = 120;
+  const scrollPos = window.scrollY + headerOffset;
 
-sections.forEach(s => ioNav.observe(s));
+  let currentSection = sections[0];
+
+  sections.forEach(section => {
+    if (section.offsetTop <= scrollPos) {
+      currentSection = section;
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.toggle(
+      'active',
+      link.getAttribute('href') === `#${currentSection.id}`
+    );
+  });
+}
+
+window.addEventListener('scroll', setActiveNav, { passive: true });
+window.addEventListener('load', setActiveNav);
 
 // ---------- Fade-in on scroll ----------
 const revealEls = document.querySelectorAll('.reveal');
