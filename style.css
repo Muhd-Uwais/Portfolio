@@ -841,6 +841,10 @@ section {
 }
 
 /* ---------- PROJECTS ---------- */
+#projects {
+  background: var(--color-surface);
+}
+
 #projects .section-header {
   display: flex;
   align-items: flex-end;
@@ -874,7 +878,7 @@ section {
 }
 
 .project-card {
-  background: var(--color-surface);
+  background: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: var(--space-6);
@@ -1047,7 +1051,7 @@ section {
 
 /* ---------- EXPERIENCE ---------- */
 #experience {
-  background: var(--color-surface);
+  background: var(--color-bg);
 }
 
 .experience-layout {
@@ -1179,7 +1183,7 @@ section {
 
 /* ---------- CONTACT ---------- */
 #contact {
-  background: var(--color-bg);
+  background: var(--color-surface);
 }
 
 .contact-layout {
@@ -1277,7 +1281,7 @@ section {
 
 /* Contact form */
 .contact-form-wrap {
-  background: var(--color-surface);
+  background: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-2xl);
   padding: clamp(var(--space-6), 4vw, var(--space-10));
@@ -1316,7 +1320,7 @@ section {
   width: 100%;
   padding: var(--space-3) var(--space-4);
   font-size: var(--text-sm);
-  background: var(--color-bg);
+  background: var(--color-surface);
   color: var(--color-text);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
